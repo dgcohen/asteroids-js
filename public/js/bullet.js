@@ -8,6 +8,7 @@
 	
 	var Bullet = Asteroids.Bullet = function(pos, vel, radius, color) {
 		var myVel = [];
+
 		myVel.push(vel[0] * SPEED_MULTIPLIER);
 		myVel.push(vel[1] * SPEED_MULTIPLIER);
 		

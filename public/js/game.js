@@ -20,7 +20,7 @@
 		var that = this;
 		
     this.context = context;
-    this.ship = new Ship([DIM_X / 2, DIM_Y / 2], SHIP_RADIUS, SHIP_COLOR);
+    this.ship = new Ship([DIM_X / 3, DIM_Y / 3], SHIP_RADIUS, SHIP_COLOR);
 		this.asteroids = Game.addAsteroids(NUM_ASTEROIDS, this.ship.pos, ASTEROID_RADIUS, ASTEROID_COLOR);
     this.bullets = [];
     this.hitAsteroids = 0;
@@ -177,6 +177,7 @@
 	
 	Game.prototype.start = function() {
 		this.bindKeyHandlers();
+    this.ship.power(1);
 		this.interval = setInterval(Game.prototype.step.bind(this), FPS);
 	};
 	
