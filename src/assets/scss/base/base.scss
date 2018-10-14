@@ -9,13 +9,14 @@ form, label {
 }
 
 body {
-  color: #ccc;
-  background: #111;
-  font-size: 16px;
-  line-height: normal;
   margin: 0;
   background: #222222;
   font-family: 'Lato', sans-serif;
+}
+
+.main {
+  max-width: 1000px;
+  margin: auto;
 }
 
 canvas {
@@ -27,51 +28,78 @@ li {
   list-style: none;
 }
 
+header {
+  padding: 50px 10px 20px;
+  max-width: 780px;
+  margin: auto;
+}
+
 h1 {
   display: block;
-  font-size: 60px;
-  font-weight: 100;
+  font-size: 32px;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 300;
   margin: auto;
-  margin-top: 10px;
-  width: 275px;
-  padding: 30px;
+  text-align: center;
 }
 
-h2 {
-  display: block;
-  font-size: 30px;
-  font-weight: 200;
-  margin: auto;
-  margin-top: 10px;
-  width: 110px;
-  padding-top: 20px;
-  padding-bottom: 5px;
+.controls {
+  margin: 35px 0 0;
+
+  h2 {
+    padding: 0;
+    margin: 0 0 10px;
+    display: block;
+    font-size: 16px;
+    color: $color-white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: 300;
+    text-align: center;
+  }
+
+  ul {
+    max-width: 580px;
+    margin: auto;
+    @include clearfix;
+  }
+
+  ul li {
+    display: block;
+    font-size: 14px;
+    color: $color-white;
+    font-weight: 300;
+    padding: 0  20px 0 0;
+    float: left;
+
+    &:last-child {
+      padding-right: 0;
+    }
+  }
 }
 
-ul {
-  display: block;
-  margin: auto;
-  width: 899px;
-  padding-left: 30px;
-}
-
-ul li {
-  display: inline-block;
-  font-size: 20px;
-  font-weight: 200;
-  margin: auto;
-  margin-top: 10px;
-  margin-right: 30px;
+footer {
+  padding: 30px 0;
+  p {
+    display: block;
+    text-align: center;
+    color: $color-white;
+    font-weight: 300;
+    letter-spacing: 2px;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
 }
 
 a {
   display: block;
   text-align: center;
-  color: #ccc;
-  margin-top: 45px;
-  font-weight: 100;
-  letter-spacing: 1px;
-  font-size: 24px;
+  color: $color-white;
+  font-weight: 300;
+  letter-spacing: 2px;
+  font-size: 18px;
   text-decoration: none;
 }
 

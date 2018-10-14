@@ -1,8 +1,4 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
-
-
-// components
 
 class Game extends Component {
 
@@ -27,8 +23,8 @@ class Game extends Component {
         
         <footer>
           <p>Built by Diego Cohen</p>
+          <a href="http://www.diegocohen.com/" target="_blank">www.diegocohen.com</a>
         </footer>
-        <a href="http://www.diegocohen.com/" target="_blank">www.diegocohen.com</a>
       </div>
     );
   }
