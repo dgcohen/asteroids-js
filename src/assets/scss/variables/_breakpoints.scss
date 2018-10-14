@@ -1,0 +1,17 @@
+// Minimum Width Breakpoints
+$bp480: 'screen and (min-width: 480px)';
+$bp768: 'screen and (min-width: 768px)';
+$bp960: 'screen and (min-width: 960px)';
+$bp1280: 'screen and (min-width: 1280px)';
+$bp1600: 'screen and (min-width: 1600px)';
+
+// Maximum Width Breakpoints
+$bp480max: 'screen and (max-width: 480px)';
+$bp768max: 'screen and (max-width: 767px)';
+$bp960max: 'screen and (max-width: 959px)';
+$bp1280max: 'screen and (max-width: 1279px)';
+
+// Min/Max Width Breakpoints
+$bp768-960: 'screen and (min-width: 768px) and (max-width: 959px)';
+$bp768-1280: 'screen and (min-width: 768px) and (max-width: 1279px)';
+$bp960-1280: 'screen and (min-width: 960px) and (max-width: 1279px)';

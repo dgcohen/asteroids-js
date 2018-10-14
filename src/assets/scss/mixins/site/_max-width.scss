@@ -1,0 +1,4 @@
+@mixin maxwidth () {
+  max-width: 1280px;
+  @include margin(null auto);
+}
