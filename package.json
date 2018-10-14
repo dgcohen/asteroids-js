@@ -7,7 +7,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "postinstall": "gulp default"
+    "postinstall": "gulp default && react-scripts build"
   },
   "dependencies": {
     "build": "^0.1.4",
