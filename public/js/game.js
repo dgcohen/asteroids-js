@@ -7,8 +7,8 @@
 	
 	var DIM_X = 1000,
 			DIM_Y = 500,
-      SCORE_X = 50,
-      SCORE_Y = DIM_Y - 30,
+      SCORE_X = 30,
+      SCORE_Y = 40,
 			FPS = 25,
 			NUM_ASTEROIDS = 3,
 			SHIP_COLOR = "blue",
@@ -133,7 +133,7 @@
 	
   Game.prototype.showScore = function() {
     this.context.fillStyle = "white";
-    this.context.font = "normal 20pt Arial ";
+    this.context.font = "normal 18pt Arial";
     this.context.fillText("Score: " + this.hitAsteroids, SCORE_X, SCORE_Y);
   };
 
