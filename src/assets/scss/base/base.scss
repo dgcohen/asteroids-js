@@ -1,160 +1,81 @@
+html, body, header, footer, section, article, div,
+strong, a, img, p, h1, h2, h3, time, ul, li, small,
+form, label {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+}
+
 body {
+  color: #ccc;
+  background: #111;
+  font-size: 16px;
+  line-height: normal;
   margin: 0;
   background: #222222;
   font-family: 'Lato', sans-serif;
 }
 
-.main {
-  max-width: 1000px;
+canvas {
+  display: block;
   margin: auto;
+}
+
+li {
+  list-style: none;
 }
 
 h1 {
-  font-size: 24px;
-  line-height: 32px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: $color-white;
-  font-weight: 300;
-  text-align: center;
-  margin: 30px 20px;
-
-  @include mq($bp768) {
-    font-size: 28px;
-    line-height: 34px;
-    margin: 50px 30px;
-  }
-}
-
-.game-container {
-  padding: 0 20px;
-
-  @include mq($bp768) {
-    display: flex;
-    padding: 0 50px;
-    position: relative;
-  }
-}
-.board {
-  width: 280px;
-  height: 280px;
+  display: block;
+  font-size: 60px;
+  font-weight: 100;
   margin: auto;
-
-  @include mq($bp480) {
-    width: 320px;
-    height: 320px;
-  }
-
-  @include mq($bp768) {
-    width: 500px;
-    height: 500px;
-    flex-basis: 500px;
-    margin: 0;
-  }
+  margin-top: 10px;
+  width: 275px;
+  padding: 30px;
 }
 
-.row {
-  display: flex;
-  flex-wrap: wrap;
-  height: 12.5%;
+h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 200;
+  margin: auto;
+  margin-top: 10px;
+  width: 110px;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
 
-.square {
-  flex-basis: 12.5%;
-  position: relative;
-  &:hover {
-    cursor: pointer;
-  }
+ul {
+  display: block;
+  margin: auto;
+  width: 899px;
+  padding-left: 30px;
 }
 
-.piece {
-  width: 80%;
-  height: 80%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  background-size: cover;
+ul li {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 200;
+  margin: auto;
+  margin-top: 10px;
+  margin-right: 30px;
 }
 
-.light {
-  background: #B38767;
-
-  &:hover {
-    background: #a97854;
-  }
+a {
+  display: block;
+  text-align: center;
+  color: #ccc;
+  margin-top: 45px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  font-size: 24px;
+  text-decoration: none;
 }
 
-.dark {
-  background: #EED9B9;
-
-  &:hover {
-    background: #e5c696;
-  }
-}
-
-.game-info {
-  padding: 10px 0;
-
-  @include mq($bp768) {
-    flex-basis: calc(100% - 560px);
-    float: left;
-    padding: 30px 30px;
-    background: #222222;
-
-    .text-container {
-      @include centered('y');
-      width: calc(100% - 640px);
-      right: 50px;
-      padding: 0 20px;
-    }
-  }
-
-  h3 {
-    font-weight: 300;
-    font-size: 24px;
-    line-height: 36px;
-    text-align: center;
-    color: $color-white;
-    margin: 0 0 10px;
-  }
-
-  .game-status {
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    color: $color-white;
-  }
-}
-
-footer {
-  .text-container {
-    padding: 0 0 10px;
-
-    @include mq($bp768) {
-      padding: 60px 30px 20px;
-    }
-
-    p,
-    a {
-      display: block;
-      font-weight: 300;
-      font-size: 14px;
-      line-height: 18px;
-      text-align: center;
-      color: $color-white;
-      padding: 0;
-      margin: 0;
-
-      @include mq($bp768) {
-        font-size: 18px;
-        line-height: 24px;
-      }
-
-      &:hover {
-        color: #ccc;
-      }
-    }
-  }
+a:hover {
+  color: #888;
+  transition: color .9s ease;
 }
